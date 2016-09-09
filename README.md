@@ -29,10 +29,10 @@ Receives the input text and replaces all the url matches with clickable anchor l
 Receives the input text and replaces all the email matches with clickable mail:to anchor links  
 ```javascript
   var parseText = require('npm-text-parser')
-  var inputString = 'This is awesome it parses the email's dude and krishcdbry@gmail.com done !';
+  var inputString = 'This is awesome it parses the email's dude and krishcdbry@gmail.com done !'
   
-  parseText.parseEmail(inputString)
-  // This is awesome it parses the url's dude and  
+  parseText.parseEmail(inputString);
+  // This is awesome it parses the email's dude and  
   // <a href="mailto:krishcdbry@gmail.com">krishcdbry@gmail.com</a> done !
  
 ```
@@ -42,9 +42,9 @@ Receives the input text and replaces all the hashtag matches with clickable empt
 ```javascript
   var parseText = require('npm-text-parser')
   var inputString = 'This is awesome it parses the hash tag's dude and #krishcdbry done !'
- 
-  parseText.parseHashtags(inputString)
-  // This is awesome it parses the url's dude and <a href="javascript:;">#krishcdbry</a> done !
+  
+  parseText.parseHash(inputString);
+  // This is awesome it parses the hash tag's dude and <a href="javascript:;">#krishcdbry</a> done !
  
 ```
 
