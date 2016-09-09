@@ -4,19 +4,19 @@ Text parser which receives text data as input and replaces the urls with clickab
 ## Installation
 
 ```bash
-npm i npm-parse-text
+npm i npm-text-parser
 ```
 
 ## Usage
 ```javascript
-var parseText = require('npm-parse-text');
+var parseText = require('npm-text-parser');
 ```
 
 ## parseUrl(text)
 
 Receives the input text and replaces all the url matches with clickable anchor links 
 ```javascript
-  var parseText = require('npm-parse-text')
+  var parseText = require('npm-text-parser')
   var inputString = 'This is awesome it parses the url's dude and http://krishcdbry.com done !'
   
   parseText.parseUrl(inputString);
@@ -28,8 +28,8 @@ Receives the input text and replaces all the url matches with clickable anchor l
 
 Receives the input text and replaces all the email matches with clickable mail:to anchor links  
 ```javascript
-  var parseText = require('npm-parse-text')
-  var inputString = 'This is awesome it parses the email's dude and krishcdbry@gmail.com done !'
+  var parseText = require('npm-text-parser')
+  var inputString = 'This is awesome it parses the email's dude and krishcdbry@gmail.com done !';
   
   parseText.parseEmail(inputString)
   // This is awesome it parses the url's dude and  
@@ -40,7 +40,7 @@ Receives the input text and replaces all the email matches with clickable mail:t
 ## parseHash(text)
 Receives the input text and replaces all the hashtag matches with clickable empty anchor links
 ```javascript
-  var parseText = require('npm-parse-text')
+  var parseText = require('npm-text-parser')
   var inputString = 'This is awesome it parses the hash tag's dude and #krishcdbry done !'
  
   parseText.parseHashtags(inputString)
@@ -52,7 +52,7 @@ Receives the input text and replaces all the hashtag matches with clickable empt
   Receives text text and replaces the urls with clickable links (anchor tags),
   emails as clickable mail:to tags and also replaces hash tags (#tag) with empty clickable anchor tags
 ```javascript
-  var parseText = require('npm-parse-text')
+  var parseText = require('npm-text-parser')
   var inputString = 'This is awesome it parses the url's , email's and hash tag's 
   	dude http://krishcdbry@gmail.com and email krishcdbry@gmail.com also #krishcdbry done !'
  

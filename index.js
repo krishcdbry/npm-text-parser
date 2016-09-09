@@ -4,14 +4,14 @@
  * Text parser which receives text data as input and replaces the urls with clickable links (anchor tags),
  * emails as clickable mail:to tags and also replaces hash tags (#tag) with blue colored text (Optional)
  *
- * @module npm-parse-text
+ * @module npm-text-parser
  * @typicalname parseText
  * @example
- * var sortBy = require('npm-parse-text')
+ * var sortBy = require('npm-text-parser')
  */
 
 exports.parseUrl = parseUrl;
-exports.parsEmail = parseEmail;
+exports.parseEmail = parseEmail;
 exports.parseHashtags = parseHash;
 exports.parse = parseAll;
 
@@ -23,7 +23,7 @@ exports.parse = parseAll;
  * @return {string} parsed string
  *
  * @usage
- * var parseText = require('npm-parse-text')
+ * var parseText = require('npm-text-parser')
  * var inputString = 'This is awesome it parses the url's dude and http://krishcdbry.com done !'
  *
  * parseText.parseUrl(inputString)
@@ -52,7 +52,7 @@ function parseUrl (text) {
  * @return {string} parsed string
  *
  * @usage
- * var parseText = require('npm-parse-text')
+ * var parseText = require('npm-text-parser')
  * var inputString = 'This is awesome it parses the email's dude and krishcdbry@gmail.com done !'
  *
  * parseText.parseEmail(inputString)
@@ -81,7 +81,7 @@ function parseEmail (text) {
  * @return {string} parsed string
  *
  * @usage
- * var parseText = require('npm-parse-text')
+ * var parseText = require('npm-text-parser')
  * var inputString = 'This is awesome it parses the hash tag's dude and #krishcdbry done !'
  *
  * parseText.parseHashtags(inputString)
@@ -110,7 +110,7 @@ function parseHash (text) {
  * @return {string} parsed string
  *
  * @usage
- * var parseText = require('npm-parse-text')
+ * var parseText = require('npm-text-parser')
  * var inputString = 'This is awesome it parses the url's , email's and hash tag's dude http://krishcdbry@gmail.com and email krishcdbry@gmail.com also #krishcdbry done !'
  *
  * parseText.parseAll(inputString)
