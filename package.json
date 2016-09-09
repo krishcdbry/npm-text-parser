@@ -1,0 +1,45 @@
+{
+  "name": "npm-text-parser",
+  "version": "1.0.0",
+  "description": "Text parser which receives text data as input and replaces the urls with clickable links (anchor tags), emails as clickable mail:to tags and also replaces hash tags (#tag) with empty clickable anchor tags",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishcdbry/npm-text-parser.git"
+  },
+  "keywords": [
+    "parser",
+    "text-parser",
+    "url",
+    "email",
+    "hash",
+    "hashtags",
+    "urlformatter",
+    "formatting",
+    "urlparsing",
+    "textformatting",
+    "emailformatting",
+    "npm",
+    "node",
+    "javascript",
+    "js",
+    "parsing",
+    "string",
+    "string-parse"
+  ],
+  "author": "KrishCdbry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krishcdbry/npm-text-parser/issues"
+  },
+  "maintainers": [
+    {
+      "name": "krishcdbry",
+      "email": "krishcdbry@gmail.com"
+    }
+  ],
+  "homepage": "https://github.com/krishcdbry/npm-text-parser#readme"
+}
