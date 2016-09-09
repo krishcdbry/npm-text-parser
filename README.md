@@ -44,7 +44,7 @@ Receives the input text and replaces all the hashtag matches with clickable empt
   var inputString = 'This is awesome it parses the hash tag's dude and #krishcdbry done !'
   
   parseText.parseHashtags(inputString);
-  // This is awesome it parses the hash tag's dude and <a href="javascript:;">#krishcdbry</a> done !
+   // This is awesome it parses the hash tag's dude and <a href="javascript:;">#krishcdbry</a> done !
  
 ```
 
