@@ -63,6 +63,9 @@ Receives the input text and replaces all the hashtag matches with clickable empt
  
  
 ```
+## Demo
+Demo @[npm-text-parser](https://tonicdev.com/npm/npm-text-parser)
+| https://tonicdev.com/npm/npm-text-parser
 
 ## Author
 Krishcdbry [krishcdbry@gmail.com]
