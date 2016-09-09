@@ -17,7 +17,7 @@ var parseText = require('npm-text-parser');
 Receives the input text and replaces all the url matches with clickable anchor links 
 ```javascript
 
-  var inputString = 'This is awesome it parses the url's dude and http://krishcdbry.com done !'
+  var inputString = "This is awesome it parses the url's dude and http://krishcdbry.com done !"
   
   parseText.parseUrl(inputString);
   // This is awesome it parses the url's dude and <a href="http://krishcdbry.com" 
@@ -29,7 +29,7 @@ Receives the input text and replaces all the url matches with clickable anchor l
 Receives the input text and replaces all the email matches with clickable mail:to anchor links  
 ```javascript
   
-  var inputString = 'This is awesome it parses the email's dude and krishcdbry@gmail.com done !'
+  var inputString = "This is awesome it parses the email's dude and krishcdbry@gmail.com done !"
   
   parseText.parseEmail(inputString);
   // This is awesome it parses the email's dude and  
@@ -41,7 +41,7 @@ Receives the input text and replaces all the email matches with clickable mail:t
 Receives the input text and replaces all the hashtag matches with clickable empty anchor links
 ```javascript
   
-  var inputString = 'This is awesome it parses the hash tag's dude and #krishcdbry done !'
+  var inputString = "This is awesome it parses the hash tag's dude and #krishcdbry done !"
   
   parseText.parseHashtags(inputString);
    // This is awesome it parses the hash tag's dude and <a href="javascript:;">#krishcdbry</a> done !
@@ -53,8 +53,7 @@ Receives the input text and replaces all the hashtag matches with clickable empt
   emails as clickable mail:to tags and also replaces hash tags (#tag) with empty clickable anchor tags
 ```javascript
 
-  var inputString = 'This is awesome it parses the url's , email's and hash tag's 
-  	dude http://krishcdbry@gmail.com and email krishcdbry@gmail.com also #krishcdbry done !'
+  var inputString = "his is awesome it parses the url's , email's and hash tag's dude http://krishcdbry@gmail.com and email krishcdbry@gmail.com also #krishcdbry done !"
  
   parseText.parse(inputString)
   // This is awesome it parses the url's , email's and hash tag's dude 
