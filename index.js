@@ -32,7 +32,7 @@ exports.parse = parseAll;
  */
 function parseUrl (text) {
 
-	var urls = /(\b(https?|ftp):\/\/[A-Z0-9+&@#\/%?=~_|!:,.;-]*[-A-Z0-9+&@#\/%=~_|])/gim;  // Url regex
+	var urls = /(\b(((https?|ftp):\/\/)|www.)[A-Z0-9+&@#\/%?=~_|!:,.;-]*[-A-Z0-9+&@#\/%=~_|])/gim; // Url regex
 
 	text = text ? String(text).replace(/<[^>]+>/gm, '') : '';  // Remove all the html tags
 
@@ -120,7 +120,7 @@ function parseHash (text) {
  */
 function parseAll (text) {
 
-	var urls = /(\b(https?|ftp):\/\/[A-Z0-9+&@#\/%?=~_|!:,.;-]*[-A-Z0-9+&@#\/%=~_|])/gim; // Url regex
+	var urls = /(\b(((https?|ftp):\/\/)|www.)[A-Z0-9+&@#\/%?=~_|!:,.;-]*[-A-Z0-9+&@#\/%=~_|])/gim; // Url regex
 	var emails = /(\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6})/gim; // Email regex
 	var hashTags = /((^|[ ])#[a-zA-Z0-9\d-]{1,500})/gim; // Hashtags regex
 
