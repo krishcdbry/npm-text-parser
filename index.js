@@ -5,9 +5,9 @@
  * emails as clickable mail:to tags and also replaces hash tags (#tag) with blue colored text (Optional)
  *
  * @module npm-text-parser
- * @typicalname parseText
+ * @typicalname textParser
  * @example
- * var sortBy = require('npm-text-parser')
+ * var textParser = require('npm-text-parser')
  */
 
 exports.parseUrl = parseUrl;
@@ -23,10 +23,10 @@ exports.parse = parseAll;
  * @return {string} parsed string
  *
  * @usage
- * var parseText = require('npm-text-parser')
+ * var textParser = require('npm-text-parser')
  * var inputString = 'This is awesome it parses the url's dude and http://krishcdbry.com done !'
  *
- * parseText.parseUrl(inputString)
+ * textParser.parseUrl(inputString)
  * // This is awesome it parses the url's dude and <a href="http://krishcdbry.com" target="_blank">http://krishcdbry.com</a> done !
  *
  */
@@ -52,10 +52,10 @@ function parseUrl (text) {
  * @return {string} parsed string
  *
  * @usage
- * var parseText = require('npm-text-parser')
+ * var textParser = require('npm-text-parser')
  * var inputString = 'This is awesome it parses the email's dude and krishcdbry@gmail.com done !'
  *
- * parseText.parseEmail(inputString)
+ * textParser.parseEmail(inputString)
  * // This is awesome it parses the url's dude and  <a href="mailto:krishcdbry@gmail.com">krishcdbry@gmail.com</a> done !
  *
  */
@@ -81,10 +81,10 @@ function parseEmail (text) {
  * @return {string} parsed string
  *
  * @usage
- * var parseText = require('npm-text-parser')
+ * var textParser = require('npm-text-parser')
  * var inputString = 'This is awesome it parses the hash tag's dude and #krishcdbry done !'
  *
- * parseText.parseHashtags(inputString)
+ * textParser.parseHashtags(inputString)
  * // This is awesome it parses the url's dude and <a href="javascript:;">#krishcdbry</a> done !
  *
  */
@@ -110,10 +110,10 @@ function parseHash (text) {
  * @return {string} parsed string
  *
  * @usage
- * var parseText = require('npm-text-parser')
+ * var textParser = require('npm-text-parser')
  * var inputString = 'This is awesome it parses the url's , email's and hash tag's dude http://krishcdbry@gmail.com and email krishcdbry@gmail.com also #krishcdbry done !'
  *
- * parseText.parseAll(inputString)
+ * textParser.parseAll(inputString)
  * // This is awesome it parses the url's , email's and hash tag's dude <a href="http://krishcdbry@gmail.com" target="_blank">http://krishcdbry@gmail.com</a>
  * // and email <a href="mailto:krishcdbry@gmail.com">krishcdbry@gmail.com</a> also <a href="javascript:;">#krishcdbry</a> done !
  *
