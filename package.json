@@ -1,6 +1,6 @@
 {
   "name": "npm-text-parser",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Text parser which receives text data as input and replaces the urls with clickable links (anchor tags), emails as clickable mail:to tags and also replaces hash tags (#tag) with empty clickable anchor tags",
   "main": "index.js",
   "scripts": {
