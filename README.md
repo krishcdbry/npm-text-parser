@@ -49,7 +49,7 @@ Receives the input text and replaces all the hashtag matches with clickable empt
 ```
 
 ## parse(text)
-  Receives text text and replaces the urls with clickable links (anchor tags),
+  Receives the input text and replaces the urls with clickable links (anchor tags),
   emails as clickable mail:to tags and also replaces hash tags (#tag) with empty clickable anchor tags
 ```javascript
 
@@ -63,6 +63,60 @@ Receives the input text and replaces all the hashtag matches with clickable empt
  
  
 ```
+
+## getUrls(text) 
+ (Array of url occurrences) - Receives the input text, reads all the Urls in it and returns  
+ and array of all url occurrences 
+```javascript
+
+  var inputString = 'This is awesome http://krishcdbry.com and www.heartynote.com done !'
+ 
+  textParser.getUrls(inputString)
+  // ['http://krishcdbry.com', 'www.heartynote.com']
+ 
+```
+
+
+## getEmails(text) 
+  (Array of email occurrences) - Receives the input text, reads all the emails in it and returns  
+  and array of all email occurrences 
+
+```javascript
+  var inputString = 'This is awesome krishcdbry@gmail.com and heartynote@gmail.com done !'
+ 
+  textParser.getEmails(inputString)
+  // ['krishcdbry@gmail.com', 'heartynote@gmail.com']
+```
+			
+			
+## getHashtags(text) 
+ (Array of hashtags occurrences) - Receives the input text, reads all the hashtagss in it and returns  
+ and array of all hashtags occurrences 
+
+```javascript
+  var inputString = 'This is awesome #krishcdbry, #heartynote and #node done !'
+ 
+  textParser.getHashtags(inputString)
+  // ['#krishcdbry', '#heartynote', '#node']
+```
+
+## getAll(text) 
+All occurrences includes (Urls, emails and hashtags)
+
+```javascript
+
+  var inputString = 'This is awesome krishcdbry@gmail.com and also http://nmpjs.org, www.krishcdbry.com and #heartynote and #node done !'
+ 
+  textParser.getAllOccurrences(inputString)
+  {
+  		parsed_text: 'This is awesome <a href="mailto:krishcdbry@gmail.com">krishcdbry@gmail.com</a> and also <a href="http://nmpjs.org" target="_blank">http://nmpjs.org</a>, <a href="www.krishcdbry.com" target="_blank">www.krishcdbry.com</a> and<a href="javascript:;" target="_blank"> #heartynote</a> and<a href="javascript:;" target="_blank"> #node</a> done !',
+  		urls: [ 'http://nmpjs.org', 'www.krishcdbry.com' ],
+  		emails: [ 'krishcdbry@gmail.com' ],
+  		hashtags: [ ' #heartynote', ' #node' ]
+  	}
+ 
+```
+
 ## Demo
 Demo @[npm-text-parser](https://tonicdev.com/npm/npm-text-parser)
 | https://tonicdev.com/npm/npm-text-parser
