@@ -108,12 +108,12 @@ All occurrences includes (Urls, emails and hashtags)
   var inputString = 'This is awesome krishcdbry@gmail.com and also http://nmpjs.org, www.krishcdbry.com and #heartynote and #node done !'
  
   textParser.getAllOccurrences(inputString)
-  {
-  		parsed_text: 'This is awesome <a href="mailto:krishcdbry@gmail.com">krishcdbry@gmail.com</a> and also <a href="http://nmpjs.org" target="_blank">http://nmpjs.org</a>, <a href="www.krishcdbry.com" target="_blank">www.krishcdbry.com</a> and<a href="javascript:;" target="_blank"> #heartynote</a> and<a href="javascript:;" target="_blank"> #node</a> done !',
-  		urls: [ 'http://nmpjs.org', 'www.krishcdbry.com' ],
-  		emails: [ 'krishcdbry@gmail.com' ],
-  		hashtags: [ ' #heartynote', ' #node' ]
-  	}
+  //	{
+  //		parsed_text: 'This is awesome <a href="mailto:krishcdbry@gmail.com">krishcdbry@gmail.com</a> and also <a href="http://nmpjs.org" target="_blank">http://nmpjs.org</a>, <a href="www.krishcdbry.com" target="_blank">www.krishcdbry.com</a> and<a href="javascript:;" target="_blank"> #heartynote</a> and<a href="javascript:;" target="_blank"> #node</a> done !',
+  //		urls: [ 'http://nmpjs.org', 'www.krishcdbry.com' ],
+  //		emails: [ 'krishcdbry@gmail.com' ],
+  //		hashtags: [ ' #heartynote', ' #node' ]
+  //	}
  
 ```
 
