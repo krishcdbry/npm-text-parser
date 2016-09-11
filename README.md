@@ -1,4 +1,4 @@
-# npm-text-parser
+# npm-text-parser [![NPM version](https://img.shields.io/npm/v/npm-text-parser.svg)](https://www.npmjs.com/package/npm-text-parser)
 Text parser which receives text data as input and replaces the urls with clickable links (anchor tags), emails as clickable mail:to tags and also replaces hash tags (#tag) empty clickable anchor tag.
 
 ## Installation
